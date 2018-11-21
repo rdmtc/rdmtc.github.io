@@ -1,0 +1,15 @@
+{
+  "name": "RedMatic",
+  "short_name": "RedMatic",
+  "icons": [
+    {
+      "src": "/logo-r-256.png",
+      "sizes": "256x319",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#fff",
+  "theme_color": "#6D0E0E"
+}
