@@ -6,11 +6,8 @@ branches:
   only:
   - dev
 
-git:
-  submodules: false
-
 before_install:
-  - git submodule update --init --recursive
+  - cd wiki && git pull && cd..
 
 script:
   - npm ci
