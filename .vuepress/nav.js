@@ -8,7 +8,7 @@ module.exports = [
   {
     text: 'Community',
     items: [
-      { text: 'Forum', link: 'https://homematic-forum.de' },
+      { text: 'Forum', link: 'https://homematic-forum.de/forum/viewforum.php?f=77' },
       { text: 'Facebook Gruppe', link: 'https://www.facebook.com/groups/Homematic.Freunde' },
       {
         text: 'Chat',
