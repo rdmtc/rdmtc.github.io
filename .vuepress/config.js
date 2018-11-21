@@ -2,7 +2,7 @@ const nav = require('./nav');
 const sidebar = require('./sidebar');
 
 module.exports = {
-  base: '/redmatic/',
+  base: '/',
   title: 'RedMatic',
   // serviceWorker: true,
   contentLoading: true,
