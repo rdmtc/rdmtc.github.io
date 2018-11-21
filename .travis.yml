@@ -7,7 +7,7 @@ branches:
   - dev
 
 before_install:
-  - cd wiki && git pull && cd..
+  - cd wiki && git checkout master && cd..
 
 script:
   - npm ci
