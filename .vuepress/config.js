@@ -10,17 +10,13 @@ module.exports = {
     anchor: true,
     toc: true,
   },
-  theme: 'yuu',
+  head: [
+    ['script', { src: '/theme-toggler.js' }]
+  ],
   themeConfig: {
     sidebar: sidebar(),
     nav,
-    yuu: {
-      disableDarkTheme: false,
-      colorThemes: ['red', 'blue', 'green'],
-      defaultTheme: 'red',
-      defaultDark: true,
-      disableThemeIgnore: true,
-    },
+    logo: '/logo-plain.png'
   },
   plugins: {
     // '@vuepress/back-to-top': true,

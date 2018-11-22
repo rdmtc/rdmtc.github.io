@@ -7,8 +7,7 @@
   "dependencies": {
     "@vuepress/plugin-back-to-top": "^1.0.0-alpha.23",
     "@vuepress/plugin-medium-zoom": "^1.0.0-alpha.23",
-    "vuepress": "^1.0.0-alpha.23",
-    "vuepress-theme-yuu": "^1.0.0"
+    "vuepress": "^1.0.0-alpha.23"
   },
   "scripts": {
     "dev": "vuepress dev",
