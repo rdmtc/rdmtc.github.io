@@ -7,7 +7,7 @@ actionText: Get Started →
 actionLink: /guide/
 features:
 - title: Automatisierung
-  details: Visuelle Programmierung von Automatisierungen, Regeln und Szenen. Ergänzung oder Alternative für CCU-Programmen und -Scripten
+  details: Visuelle Programmierung von Automatisierungen, Regeln und Szenen. Ergänzung oder Alternative für CCU-Programme und -Scripte
 - title: Visualisierung
   details: Visualisierung und Steuerung über die RedMatic-WebApp und Node-RED Dashboard
 - title: Integration
