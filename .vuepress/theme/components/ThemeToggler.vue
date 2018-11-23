@@ -24,7 +24,7 @@
   export default {
     data() {
       return {
-        isDark: localStorage.getItem('vuepress-isDark') || false
+        isDark: window.localStorage.getItem('vuepress-isDark') || false
       };
     },
 
@@ -37,7 +37,7 @@
     methods: {
       toggle() {
         this.isDark = !this.isDark;
-        localStorage.setItem('vuepress-isDark', this.isDark);
+        window.localStorage.setItem('vuepress-isDark', this.isDark);
         document.body.classList[this.isDark ? 'add' : 'remove']('dark');
       }
     }
