@@ -16,7 +16,7 @@ Rund um das Thema Node-RED lassen sich unzählige Artikel, Tutorials, Dokumentat
 ## Crashkurs
 
 
-![](images/crash-1.png)
+![](wiki/images/crash-1.png)
 * Aus der _Palette_ im linken Bildschirmbereich können _Nodes_ per Drag&Drop im _Flow_ platziert werden
 * _Nodes_ können über einen Eingang auf der linken Seite und/oder einen Ausgang auf der rechten Seite mit anderen Nodes verbunden werden
 * Nachdem ein _Flow_ verändert wurde müssen die Änderungen per klick auf _Deploy_ übernommen werden
@@ -25,7 +25,7 @@ Rund um das Thema Node-RED lassen sich unzählige Artikel, Tutorials, Dokumentat
 * Das Debug Fenster befindet sich in der _Sidebar_, diese kann im Menü oben rechts unter "View" durch klick auf "Show Sidebar" angezeigt werden
 
 
-![](images/crash-2.mov.gif)
+![](wiki/images/crash-2.mov.gif)
 
 #### Editieren von Nodes, Verbindungen und Layout :
 * Ein Node oder eine Verbindung kann durch anklicken selektiert werden (oranger Rahmen)
