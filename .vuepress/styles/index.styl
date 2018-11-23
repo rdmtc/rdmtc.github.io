@@ -12,7 +12,7 @@ body.dark
 
   .content
     code
-      color: $purple
+      color: $darkCodeColor
       background-color: $darkSecondaryBg
     a code
       color $accentColor
@@ -25,6 +25,11 @@ body.dark
   th, td
     border-color: $darkBorderColor
 
+
+  .page-edit
+    .edit-link a, .last-updated .prefix
+      color: $darkCodeColor
+
   .sidebar
     background-color: $darkPrimaryBg
     border-right-color: $darkBorderColor
@@ -32,6 +37,8 @@ body.dark
       border-bottom-color: $darkBorderColor
   a.sidebar-link
     color: $darkAltTextColor
+    &:hover, &.active
+      color: $accentColor
 
   .home
     .hero .description, .feature h2, .feature p
