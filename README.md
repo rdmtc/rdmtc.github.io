@@ -7,7 +7,7 @@ actionText: Get Started →
 actionLink: /guide/
 features:
 - title: Node-RED
-  details: [Node-RED](https://nodered.org) als Addon für die [CCU3](https://www.homematic-ip.com/produkte/detail/smart-home-zentrale-ccu3.html) und [RaspberryMatic](https://github.com/jens-maus/RaspberryMatic)
+  details: <a href="https://nodered.org">Node-RED</a> als Addon für die <a href="https://www.homematic-ip.com/produkte/detail/smart-home-zentrale-ccu3.html">CCU3</a> und <a href="https://github.com/jens-maus/RaspberryMatic">RaspberryMatic</a>
 - title: Automatisierung
   details: Visuelle Programmierung von Automatisierungen, Regeln und Szenen
 - title: Visualisierung
