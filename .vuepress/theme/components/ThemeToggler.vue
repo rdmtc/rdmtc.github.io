@@ -24,11 +24,12 @@
   export default {
     data() {
       return {
-        isDark: window.localStorage.getItem('vuepress-isDark') || false
+        isDark: false
       };
     },
 
     mounted() {
+      this.isDark = window.localStorage.getItem('vuepress-isDark') || false;
       if(this.isDark) {
         document.body.classList.add('dark');
       }
