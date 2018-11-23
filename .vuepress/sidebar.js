@@ -7,7 +7,7 @@ module.exports = () => {
 
   // Guide
   sidebar['/doku/'] = fs.readdirSync(path.join(__dirname, '../doku'))
-    .filter(file => file.endsWith('.md'));
+    .filter(file => file.endsWith('.md') && file !== 'README.md');
 
 
   // Wiki
