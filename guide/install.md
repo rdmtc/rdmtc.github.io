@@ -4,12 +4,17 @@
 ## CCU3 / RaspberryMatic
 
 * Zur Sicherheit __ein Backup der CCU anfertigen__.
-* Neueste Version von https://github.com/hobbyquaker/RedMatic/releases/latest herunterladen. Es wird die Datei 
-`redmatic-<version>.tar.gz` benötigt: ![](/wiki/images/install-1.png)
-* Im Homematic WebUI Systemsteuerung Zusatzsoftware aufrufen: ![](/wiki/images/install-2.png) ![](/wiki/images/install-3.png)
-* Heruntergeladene Datei auswählen: ![](/wiki/images/install-4.png) ![](/wiki/images/install-5.png)
-* Datei auf die CCU hochladen: ![](/wiki/images/install-6.png)
-* Installation Starten: ![](/wiki/images/install-7.png)
+* Aktuelle Version von [Github](https://github.com/HM-RedMatic/RedMatic/releases/latest herunterladen). Es wird die Datei 
+`redmatic-<version>.tar.gz` benötigt:    
+  ![](/wiki/images/install-1.png)
+* Im Homematic WebUI Systemsteuerung Zusatzsoftware aufrufen:    
+  ![](/wiki/images/install-2.png) ![](/wiki/images/install-3.png)
+* Heruntergeladene Datei auswählen:     
+  ![](/wiki/images/install-4.png) ![](/wiki/images/install-5.png)
+* Datei auf die CCU hochladen:     
+  ![](/wiki/images/install-6.png)
+* Installation Starten:     
+  ![](/wiki/images/install-7.png)
 * Im Anschluss abwarten bis sich die CCU neu gestartet hat - hier ist Geduld erforderlich. Die Installation von RedMatic benötigt einige Zeit.
 * Node-RED ist unter `http://<ccu-adresse>/addons/red` erreichbar.
 * Node-RED Dashboard ist unter `http://<ccu-adresse>/addons/red/ui` erreichbar.
