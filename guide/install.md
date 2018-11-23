@@ -4,7 +4,7 @@
 ## CCU3 / RaspberryMatic
 
 * Zur Sicherheit __ein Backup der CCU anfertigen__.
-* Aktuelle Version von [Github](https://github.com/HM-RedMatic/RedMatic/releases/latest herunterladen). Es wird die Datei 
+* Aktuelle Version von [Github](https://github.com/HM-RedMatic/RedMatic/releases/latest) herunterladen. Es wird die Datei 
 `redmatic-<version>.tar.gz` benötigt:    
   ![](/wiki/images/install-1.png)
 * Im Homematic WebUI Systemsteuerung Zusatzsoftware aufrufen:    
