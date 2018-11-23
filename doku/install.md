@@ -40,7 +40,7 @@ Nach erfolgtem Update ist u.U. eine Löschung des Browser-Cache notwendig.
 ## Deinstallation
 
 Im Homematic WebUI unter _Systemsteuerung_ - _Zusatzsoftware_ auf _Deinstallieren_ klicken:    
-![](wiki/images/uninstall.png)
+![](/wiki/images/uninstall.png)
 
 Das Addon sollte nach einigen Sekunden - selbst ohne Reboot - vollständig entfernt worden sein. 
 
