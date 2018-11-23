@@ -6,7 +6,7 @@ module.exports = () => {
   const sidebar = {};
 
   // Guide
-  sidebar['/guide/'] = fs.readdirSync(path.join(__dirname, '../guide'))
+  sidebar['/doku/'] = fs.readdirSync(path.join(__dirname, '../doku'))
     .filter(file => file.endsWith('.md') && file !== 'README.md');
 
 
