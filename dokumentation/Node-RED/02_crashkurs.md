@@ -12,7 +12,7 @@
 
 ![](/wiki/images/crash-2.mov.gif)
 
-## Editieren von Nodes, Verbindungen und Layout :
+## Editieren von Nodes, Verbindungen und Layout
 * Ein Node oder eine Verbindung kann durch Anklicken selektiert werden (oranger Rahmen)
 * Mehrere Nodes können durch aufziehen eines Selektionsrahmen (Maustaste halten und ziehen) ausgewählt werden. 
 * Selektierte Nodes können im Paket bewegt werden.
