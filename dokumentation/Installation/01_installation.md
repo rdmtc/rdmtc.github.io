@@ -24,5 +24,4 @@ Per Default werden die Schnittstellenprozesse CUxD und hs485d (wired) nicht akti
 
 ## rmupdate
 
-RedMatic lässt sich auch über das [Addon rmupdate](https://github.com/j-a-n/raspberrymatic-addon-rmupdate) installieren und updaten. Dies bietet den Vorteil dass kein überflüssiger Zwangs-Reboot im Anschluss an die Insta
-
+RedMatic lässt sich auch über das [Addon rmupdate](https://github.com/j-a-n/raspberrymatic-addon-rmupdate) installieren und updaten.
