@@ -60,7 +60,7 @@
       },
       logoSrc() {
         let src = this.$withBase(this.data.heroImage);
-        if(document.body.classList.contains('dark')) {
+        if(typeof document === 'object' && document.body.classList.contains('dark')) {
           src = src.replace(/(\..{3})$/, '-dark$1');
         }
         return src;
