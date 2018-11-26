@@ -3,7 +3,7 @@
     <div class="hero">
       <img class="logo"
         v-if="data.heroImage"
-        :src="$withBase(data.heroImage)"
+        :src="logoSrc"
         alt="RedMatic"
         title="RedMatic"
       >
@@ -57,6 +57,13 @@
     computed: {
       data() {
         return this.$page.frontmatter
+      },
+      logoSrc() {
+        let src = this.$withBase(this.data.heroImage);
+        if(document.body.classList.contains('dark')) {
+          src = src.replace(/(\..{3})$/, '-dark$1');
+        }
+        return src;
       },
 
       actionLink() {
