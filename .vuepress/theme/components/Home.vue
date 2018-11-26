@@ -4,10 +4,9 @@
       <img class="logo"
         v-if="data.heroImage"
         :src="$withBase(data.heroImage)"
-        alt="hero"
+        alt="RedMatic"
+        title="RedMatic"
       >
-
-      <h1>{{ data.heroText || $title || 'Hello' }}</h1>
 
       <p class="description">
         {{ data.tagline || $description || 'Welcome to your VuePress site' }}
