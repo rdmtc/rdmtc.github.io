@@ -34,6 +34,9 @@
       >
         <h2>{{ feature.title }}</h2>
         <p><span v-html="feature.details"></span></p>
+        <div v-if="feature.image">
+          <img :src="feature.image">
+        </div>
       </div>
     </div>
 
