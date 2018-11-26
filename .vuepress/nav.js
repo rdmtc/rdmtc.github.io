@@ -1,6 +1,6 @@
 module.exports = [
   // Normal Links
-  { text: 'Dokumentation', link: '/doku/' },
+  { text: 'Dokumentation', link: '/dokumentation/' },
   { text: 'Wiki', link: '/wiki/' },
   // { text: 'Komponenten', link: '/components/' },
 

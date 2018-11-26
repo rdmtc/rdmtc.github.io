@@ -2,13 +2,40 @@ const fs = require('fs');
 const path = require('path');
 const matter = require('gray-matter');
 
+
+function getFiles(dir) {
+  return fs.readdirSync(path.join(__dirname, '..', dir))
+    .filter(file => file.endsWith('.md') && file !== 'README.md');
+}
+
 module.exports = () => {
   const sidebar = {};
 
   // Guide
-  sidebar['/doku/'] = fs.readdirSync(path.join(__dirname, '../doku'))
-    .filter(file => file.endsWith('.md') && file !== 'README.md');
-
+  sidebar['/dokumentation/'] =[
+    {
+      title: 'RedMatic',
+      collapsable: false,
+      children: [
+        ['', 'Einführung'],
+        ...getFiles('dokumentation/Installation').map(file => `Installation/${ file }`)
+      ]
+    },
+    {
+      title: 'Node-RED',
+      collapsable: false,
+      children: [
+        ...getFiles('dokumentation/Node-RED').map(file => `Node-RED/${file}`)
+      ]
+    },
+    {
+      title: 'FAQ',
+      collapsable: false,
+      children: [
+        ...getFiles('dokumentation/FAQ').map(file => `FAQ/${file}`)
+      ]
+    }
+  ];
 
   // Wiki
   const wikiGroups = {};

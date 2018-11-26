@@ -30,16 +30,29 @@
 
     mounted() {
       this.isDark = window.localStorage.getItem('vuepress-isDark') || false;
-      if(this.isDark) {
+      if (this.isDark) {
         document.body.classList.add('dark');
+        this.changeLogos();
       }
     },
 
     methods: {
       toggle() {
         this.isDark = !this.isDark;
-        window.localStorage.setItem('vuepress-isDark', this.isDark);
+        window.localStorage.setItem('vuepress-isDark', this.isDark ? 'yes' : '');
         document.body.classList[this.isDark ? 'add' : 'remove']('dark');
+        this.changeLogos();
+      },
+      changeLogos() {
+        const elems = document.querySelectorAll('header .logo, .hero .logo');
+        elems.forEach(el => {
+          if(this.isDark) {
+            el.src = el.src.replace(/(\..{3})$/, '-dark$1');
+          } else {
+            el.src = el.src.replace(/-dark/, '');
+          }
+        });
+
       }
     }
   }
@@ -50,6 +63,7 @@
     margin-left: 1.5rem;
     padding-top: 5px;
   }
+
   a {
     cursor: pointer;
     color: inherit;

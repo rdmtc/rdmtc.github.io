@@ -20,6 +20,9 @@ module.exports = {
       lang: "de-DE"
     }
   },
+  markdown: {
+    lineNumbers: true
+  },
   plugins: [
     '@vuepress/plugin-medium-zoom'
   ]
