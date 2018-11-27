@@ -1,8 +1,8 @@
 module.exports = [
   // Normal Links
-  { text: 'Dokumentation', link: '/dokumentation/' },
+  { text: 'Doku', link: '/dokumentation/' },
+  { text: 'Nodes', link: '/nodes/' },
   { text: 'Wiki', link: '/wiki/' },
-  // { text: 'Komponenten', link: '/components/' },
 
   // Links with dropdown
   {

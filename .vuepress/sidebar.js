@@ -4,8 +4,13 @@ const matter = require('gray-matter');
 
 
 function getFiles(dir) {
+  let subdir = dir.split('/');
+  subdir.shift();
+  subdir = subdir.join('/');
+  subdir = subdir.length ? `${subdir}/` : '';
   return fs.readdirSync(path.join(__dirname, '..', dir))
-    .filter(file => file.endsWith('.md') && file !== 'README.md');
+    .filter(file => file.endsWith('.md') && file !== 'README.md')
+    .map(file => subdir + file);
 }
 
 module.exports = () => {
@@ -18,23 +23,34 @@ module.exports = () => {
       collapsable: false,
       children: [
         ['', 'Einführung'],
-        ...getFiles('dokumentation/Installation').map(file => `Installation/${ file }`)
+        ...getFiles('dokumentation/Installation')
       ]
     },
-    {
-      title: 'Node-RED',
-      collapsable: false,
-      children: [
-        ...getFiles('dokumentation/Node-RED').map(file => `Node-RED/${file}`)
-      ]
-    },
+
     {
       title: 'FAQ',
       collapsable: false,
       children: [
-        ...getFiles('dokumentation/FAQ').map(file => `FAQ/${file}`)
+        ...getFiles('dokumentation/FAQ')
       ]
     }
+  ];
+
+  sidebar['/nodes/'] = [
+    {
+      title: 'CCU Nodes',
+      collapsable: false,
+      children: [
+        ...getFiles('nodes/ccu')
+      ]
+    },
+    {
+      title: 'redmatic',
+      collapsable: false,
+      children: [
+        ...getFiles('nodes/redmatic')
+      ]
+    },
   ];
 
   // Wiki
