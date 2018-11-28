@@ -1,8 +1,7 @@
 # get value
 
-Diese Node liest einen Datenpunkt der CCU sobald ein Input-Event aus
-einer vorgeschalteten Node eintrifft.  
-Das Auslesen des Werts passiert also nicht, wenn sich der Wert ändert, sondern
+Diese Node gibt beim Eintreffen einer Beliebigen Nachricht den zwischengespeicherten Zustand eines Datenpunkt der CCU aus.
+Das Ausgeben des Werts findet also nicht statt wenn sich der Wert ändert, sondern
 wenn er innerhalb eines Flows benötigt wird.
 
 ## Attribute
@@ -34,14 +33,13 @@ Hier wird das spezifische Property des Datenpunkts ausgewählt:
 * `ts`: Der aktuelle Timestamp
 * `lc`: Der Timestamp der letzten Aktualisierung
 * `working`: Gibt an, ob sich der Aktor gerade im Schaltvorgang befindet
-* `direction`: ???
-* `all properties as object`: Es wird das ganze Ergbnis der Abfrage als Object zurückgegeben
+* `direction`: Gibt die Richtung an in der sich z.B. ein Rollladen im Moment bewegt
+* `all properties as object`: Es werden alle Attribute eines Datenpunktes als Objekt zurückgegeben
 
 ### Set Property
 
-Mit dieser Einstellung wird beeinflusst, wie das Ergebnis an die nächste Node weitergegeben
-werden soll. Alternativ kann auch ein [Context](https://nodered.org/docs/user-guide/context)
-befüllt werden.
+Mit dieser Einstellung kann ausgewählt werden in welche Property der ausgegebenen Nachricht das Ergebnis gesetzt wird. Alternativ kann auch eine [Context](https://nodered.org/docs/user-guide/context)
+Variable gesetzt werden.
 
-Soll beispielsweise `msg.payload` vom Input-Event erhalten werden, kann über `msg.` ein
-zusätzliches Property angegeben werden welches dem `msg` Objekt hinzugefügt wird. 
+Soll beispielsweise `msg.payload` vom Input-Event erhalten werden, kann über `msg.` eine
+zusätzliche Property angegeben werden welche dem `msg` Objekt hinzugefügt wird. 

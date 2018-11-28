@@ -11,55 +11,56 @@ Die Einstellungen gelten Flowübergreifend. Die Konfiguration ist im Menü unter
 ### CCU Name
 
 Frei wählbarer Name für die aktuelle CCU-Konfiguration.  
-Er dient zur Unterscheidung falls ein RedMatic mehrere CCUs verwalten soll.
-
+Er dient zur Unterscheidung falls mehrere CCUs an RedMatic angebunden werden und erscheint in allen anderen CCU Nodes.
 ### CCU Address
 
-Die IP-Adresse der CCU.  
+Die IP-Adresse oder der Hostname der CCU.  
 Wird RedMatic als CCU-Addon installiert, läuft es auf dem selben Device weshalb 
-die Loopback-Adresse `127.0.0.1` gewählt werden kann..
+die Loopback-Adresse `localhost` bzw. `127.0.0.1` gewählt werden kann.
 
 ### Listen Address
 
-Die IP-Adresse des Netzwerk-Interfaces auf welche RedMatic hören soll.  
-Läuft RedMatic auf der CCU wird hier ebenfalls `127.0.0.1` gewählt.  
+Die IP-Adresse des Netzwerk-Interfaces auf welchem die RedMatic RPC Server "lauschen" sollen.  
+Läuft RedMatic auf der CCU wird hier ebenfalls `localhost` bzw. `127.0.0.1` verwendet.  
 Um auf allen Interfaces zu lauschen kann `0.0.0.0` verwendet werden. 
 
 ### Init Address
 
-Die Init-Adresse dient als IP für die RPC-Callbacks. Sie wird als Empfänger-IP
-den RPC-Prozessen mitgeteilt.  
-Läuft RedMatic auf der CCU ist ebenfalls `127.0.0.1` zu verwenden.
+Die Init-Adresse wird den CCU-Schnittstellenprozessen für RPC-Callbacks mitgeilt. Läuft RedMatic auf der CCU ist 
+ebenfalls `localhost` bzw. `127.0.0.1` zu verwenden. 
+
 
 ### BIN-RPC Port
 
-Der Port des BIN-RPC Dienstes der CCU, normalerweise `2047`.
+Der Port des RedMatic BIN-RPC Dienstes, normalerweise `2047`. Werden Verbindungen zu mehreren CCUs hergestellt braucht
+jede Verbindung einen exklusiven Port.
 
 ### XML-RPC Port
 
-Der Port des XML-RPC Dienstes der CCU, normalerweise `2048`.
+Der Port des RedMatic XML-RPC Dienstes, normalerweise `2048`. Werden Verbindungen zu mehreren CCUs hergestellt braucht
+jede Verbindung einen exklusiven Port.
 
 ### Interfaces
 
-Hier können die zu verwendenden Schnittstellen angegeben werden werden.
-Nutzt man Beispielsweise keine CUxD oder HmIP Geräte, kann der Haken entfernt werden
-was die entsprechenden ungeutztn Komponenten deaktiviert.
+Hier können die zu verwendenden Schnittstellen angegeben werden.
+Nutzt man Beispielsweise keinen CUxD oder HmIP Geräte, kann der Haken entfernt werden
+was die entsprechenden ungenutzten Komponenten deaktiviert.
 
-* ReGaHSS: Die Logikschicht der CCU, also Programme und Systemvariablen
-* BidCos-RF: HomeMatic Funk
-* BidCos-Wired: HomeMatic Wired
-* HmIP-RF: HomeMatic-IP Funk
-* VirtualDevices
+* ReGaHSS: Die Logikschicht der CCU, verwaltet CCU-Programme und CCU-Systemvariablen
+* BidCos-RF: Homematic Funk
+* BidCos-Wired: Homematic Wired
+* HmIP-RF: Homematic-IP Funk
+* VirtualDevices: Heizungsgruppen, in CCU eingebundene Systeme wie Osram Lightify
 * CUxD
 
 ### RPC Ping-Timeout
 
-Zeitinterval in Sekunden in dem die beiden RPC Dienste der CCU auf Funktion Erreichbarkeit geprüft werden.   
+Zeitinterval in Sekunden in dem die Verbindung zu den Schnittstellenprozessen geprüft wird.   
 
 ### ReGaHSS Polling
 
 Änderungen von CCU-Systemvariablen werden nicht automatisch an RedMatic übermittelt.
-Durch einschalten von Polling holt RedMatic die Variablen und deren Werte im 
+Mit aktiviertem Polling fragt RedMatic die Variablen und deren Werte in den per 
 Poll-Interval eingestellten Zeitintervallen ab. 
 
 ### ReGaHSS Poll-Interval
@@ -68,7 +69,6 @@ Das Zeitintervall in Sekunden um die Systemvariablen von der CCU zu lesen.
 
 ### Context-Store
 
-Hier wird der Node-RED Context-Store festgelegt. Dieser dient zur Speicherung von Werten über Flows hinweg.  
-Ein Beispiel wäre: Zählen der Events.
+Hier wird der Node-RED Context-Store festgelegt in dem RedMatic die Zustände aller Geräte/Variablen vorhält. 
 
 Weiteres unter [Working with context](https://nodered.org/docs/user-guide/context) in der Node-RED Dokumentation.  
