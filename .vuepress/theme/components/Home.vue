@@ -46,7 +46,14 @@
       class="footer"
       v-if="data.footer"
     >
-      {{ data.footer }}
+      <div>
+        Dieses Projekt lebt durch die Community!
+        <a href="/dokumentation/RedMatic/99_mitarbeit.html">Helfe mit</a>
+        und mach RedMatic noch besser.
+      </div>
+      <p>
+        {{ data.footer }}
+      </p>
     </div>
   </div>
 </template>

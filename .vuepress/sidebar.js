@@ -23,7 +23,7 @@ module.exports = () => {
       collapsable: false,
       children: [
         ['', 'Einführung'],
-        ...getFiles('dokumentation/Installation')
+        ...getFiles('dokumentation/RedMatic')
       ]
     },
 
