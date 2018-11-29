@@ -32,13 +32,14 @@ ebenfalls `localhost` bzw. `127.0.0.1` zu verwenden.
 
 ### BIN-RPC Port
 
-Der Port des RedMatic BIN-RPC Dienstes, normalerweise `2047`. Werden Verbindungen zu mehreren CCUs hergestellt braucht
-jede Verbindung einen exklusiven Port.
+Der Port des RedMatic BIN-RPC Dienstes an den die CCU Events schickt.
+Werden Verbindungen zu mehreren CCUs hergestellt (mehrere ccu-configuration Node Instanzen)
+braucht jede Verbindung einen exklusiven Port.
 
 ### XML-RPC Port
 
-Der Port des RedMatic XML-RPC Dienstes, normalerweise `2048`. Werden Verbindungen zu mehreren CCUs hergestellt braucht
-jede Verbindung einen exklusiven Port.
+Der Port des RedMatic XML-RPC Dienstes an den die CCU Events schickt.
+Werden Verbindungen zu mehreren CCUs hergestellt braucht jede Verbindung einen exklusiven Port.
 
 ### Interfaces
 
