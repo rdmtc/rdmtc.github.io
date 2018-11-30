@@ -1,10 +1,11 @@
 language: node_js
+
 node_js:
-  - "10"
+  - '10'
 
 branches:
   only:
-  - dev
+    - dev
 
 before_install:
   - cd wiki && git checkout master && cd ..
@@ -16,18 +17,17 @@ script:
 
 cache:
   directories:
-    - "node_modules"
+    - node_modules
 
 notifications:
-  slack: homematicuser:$SLACK_TOKEN
+  slack:
+    secure: pUNBZoe7RvY2OCuB6yFfM8JLtR0IGdj8p7atnqN1kBRD4aPBZRBl5bxZtYIeHbwM/5A520IRAvfGkGYJTP0M/UpzbghV0/mPBP1gu6GdtT1DBQM5EWPq32cVqbNY3qITg/NmpGpgkSpJ9A/KterpWTpBGywjHIjtN13D2JwPD20K3+8/mGMirIVBxdRUR4tFLjNBCcIrNhzaG+bnb8t7wDnZEXVG8QSAUhI7zK1WZtYsxJBCCbteSGPE5HR2wBRDWrWfcj3OOnK+wfHb4D1bSt2af24TDnYhl+7wef9MILEBjXbRPBNlC4txfVsXJII0fkx4c3P472V4eD4YdIZ21TI+T+XArdfqCavUY/lurulrX6SNLXiFAI1n/J+/caRiVvmcfxQhQhOUc5mG+Mo0HqdanT+fUiH7ftwqyWF2WL/ZkCiHaSwkWgLU8f7rsqnf4kCjQ0dK6XaQy+eN6jpSSUBrDb9Noe7nEERUxCw6DOAkVyFqCO01wnyUT/gZ9I6oIMCxUGTSy8rCMPbPxksSVy5u9/aGyM5kVfaQuwHqNduZ8RNx3217Lb4Ymw114jewimby9pjrZWBCyjj5HTWCPoV2IfvyKCWpl8fjvM65DbtEaa5IMZ84heTR9T63vDTCFPvoXm7cvsTfplyf39yKl737B/+yQhaGoPSiXdMtSq8=
 
 deploy:
   provider: pages
   skip-cleanup: true
-  local_dir: .vuepress/dist
-  github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
-#  keep-history: true
+  local_dir: ".vuepress/dist"
+  github-token: "$GITHUB_TOKEN"
   target-branch: master
   on:
     branch: dev
-
