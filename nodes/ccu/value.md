@@ -1,13 +1,16 @@
 # value
 
-Der `value` Node kann Datenpunkte setzen _und_ erzeugt Nachrichten wenn vom Schnittstellenprozess ein den Datenpunkt
+Die `value` Node kann Datenpunkte setzen _und_ erzeugt Events wenn vom Schnittstellenprozess ein den Datenpunkt
 betreffendes Ereignis eingeht.
+
+Beispiel: Wird die `value` Node am Anfang platziert, startet sie den Flow wenn z.B. ein Schaltaktor den Zustand ändert. Wird die Node ans Ende positioniert kann sie den Zustand des Schaltaktors setzen.
+
 
 ## Attribute
 
 ### CCU
 
-Unter CCU wird die zu verwendende CCU-Konfiguration angegeben.
+Die zu verwendende CCU-Konfiguration.
 
 ### Topic
 

@@ -17,13 +17,13 @@ module.exports = () => {
   const sidebar = {};
 
   // Guide
-  sidebar['/dokumentation/'] =[
+  sidebar['/doku/'] =[
     {
       title: 'RedMatic',
       collapsable: false,
       children: [
         ['', 'Einführung'],
-        ...getFiles('dokumentation/RedMatic')
+        ...getFiles('doku/RedMatic')
       ]
     },
 
@@ -31,7 +31,7 @@ module.exports = () => {
       title: 'FAQ',
       collapsable: false,
       children: [
-        ...getFiles('dokumentation/FAQ')
+        ...getFiles('doku/FAQ')
       ]
     }
   ];
