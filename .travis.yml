@@ -19,7 +19,7 @@ cache:
     - "node_modules"
 
 notifications:
-  email: false
+  slack: homematicuser:kNHKJPwiBoNbg0WU5da5EvWS
 
 deploy:
   provider: pages
@@ -30,3 +30,4 @@ deploy:
   target-branch: master
   on:
     branch: dev
+
