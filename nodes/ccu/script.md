@@ -2,6 +2,8 @@
 
 Übergibt ein in RedMatic definiertes Script an ReGaHSS führt dieses aus und gibt die Rückgabe an _Output_ der Node zurück.
 
+![script node settings](./images/script-node-settings.png)
+
 ## Attribute
 
 ### CCU
@@ -15,7 +17,7 @@ Identifizierung der Rückgabe.
 
 ### Script
 
-Das ReGaHSS Script welches ausgeführt werden soll.  
+Das ReGaHSS Script welches ausgeführt werden soll.
 Das Feld kann leer gelassen werden um `msg.payload` aus dem Input-Objekt als Script zu verwenden.
 
 ### Name
