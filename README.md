@@ -4,7 +4,7 @@ sidebar: false
 description: Node-RED als Addon für die Homematic CCU3 und RaspberryMatic
 heroImage: /logo-w-200.png
 actionText: Get Started →
-actionLink: /dokumentation/
+actionLink: /doku/
 features:
 - title: Automatisierung
   details: Visuelle Programmierung von Automatisierungen, Regeln und Szenen. Ergänzung oder Alternative für CCU-Programme und -Scripte
