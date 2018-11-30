@@ -19,7 +19,7 @@ cache:
     - "node_modules"
 
 notifications:
-  slack: homematicuser:kNHKJPwiBoNbg0WU5da5EvWS
+  slack: homematicuser:$SLACK_TOKEN
 
 deploy:
   provider: pages
