@@ -4,6 +4,8 @@ Diese Node gibt beim Eintreffen einer Beliebigen Nachricht den zwischengespeiche
 Das Ausgeben des Werts findet also nicht statt wenn sich der Wert ändert, sondern
 wenn er innerhalb eines Flows benötigt wird.
 
+![get value node example](./images/getvalue-node-settings.png)
+
 ## Attribute
 
 ### CCU
