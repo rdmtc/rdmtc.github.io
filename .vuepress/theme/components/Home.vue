@@ -48,7 +48,7 @@
     >
       <div>
         Dieses Projekt lebt durch die Community!
-        <a href="/dokumentation/RedMatic/99_mitarbeit.html">Helfe mit</a>
+        <a href="/doku/RedMatic/99_mitarbeit.html">Helfe mit</a>
         und mach RedMatic noch besser.
       </div>
       <p>

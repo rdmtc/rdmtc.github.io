@@ -12,6 +12,7 @@ before_install:
 script:
   - npm ci
   - npm run build
+  - npm run check
 
 cache:
   directories:
