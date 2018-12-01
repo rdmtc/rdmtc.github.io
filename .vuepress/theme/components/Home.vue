@@ -16,6 +16,14 @@
         class="action"
         v-if="data.actionText && data.actionLink"
       >
+        <a href="https://github.com/HM-RedMatic/RedMatic/releases" rel="noopener" class="nav-link action-button">
+          Download
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 0.1rem; height: 1.2rem">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+        </a>
         <NavLink
           class="action-button"
           :item="actionLink"
@@ -123,6 +131,7 @@
         transition background-color .1s ease
         box-sizing border-box
         border-bottom 1px solid darken($accentColor, 10%)
+        margin: 0 0.2rem;
 
         &:hover
           background-color lighten($accentColor, 10%)
