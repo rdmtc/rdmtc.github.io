@@ -1,6 +1,5 @@
 # Crashkurs
 
-
 ![](/wiki/images/crash-1.png)
 * Aus der _Palette_ im linken Bildschirmbereich können _Nodes_ per Drag&Drop im _Flow_ platziert werden
 * _Nodes_ können über einen Eingang auf der linken Seite und/oder einen Ausgang auf der rechten Seite mit anderen Nodes verbunden werden
