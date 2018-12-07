@@ -50,3 +50,12 @@ Folgende Dateien und Ordner werden vom Addon auf der CCU Installiert, sollte ein
 * /usr/local/etc/config/lighttpd/redmatic.conf
 * /usr/local/etc/config/rc.d/redmatic
 * `redmatic` in /usr/local/etc/config/hm_addons.cfg
+
+## Standalone Node-RED
+
+Die CCU Nodes von RedMatic können auch in eine bestehende Node-RED Installation integriert werden die 
+gentrennt von der CCU betrieben wird. Über diesen Weg kann der Kernteil von RedMatic z.B. auch mit einer CCU2
+verwendet werden. In Node-RED können über _Manage Palette_ die [node-red-contrib-ccu](https://github.com/HM-RedMatic/node-red-contrib-ccu)
+installiert werden.
+
+Soll Node-RED auf einem RaspberryPi installiert werden, hilft diese [Anleitung](https://github.com/codmpm/node-red-contrib-loxone/wiki/Anf%C3%A4nger%3A-Installation-RPi%2C-node-red%2C-nodes) weiter.

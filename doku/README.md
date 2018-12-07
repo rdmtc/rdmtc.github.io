@@ -43,9 +43,14 @@ Programme/Scripte dienen.
 
 _RedMatic_ ist __nur für die CCU3 und RaspberryMatic geeignet__. Da RedMatic unter Umständen über 100MB Speicher 
 benötigt ist es ratsam einen RaspberryPi mit 1GB RAM zu nutzen (ab Pi 2B). Auf der CCU1/2 kann _RedMatic_ nicht 
-verwendet werden.
+direkt verwendet werden.
 
 Für die Nutzung der Weboberflächen ist ein moderner Browser notwendig, der Internet Explorer wird nicht unterstützt.
+
+Das Kernstück von _RedMatic_ ist `node-red-contrib-ccu` was die CCU Nodes für Node-RED zur Verfügung stellt.
+Sie lassen sich, wie auch andere Nodes, 
+[zu einer bestehenden Node-RED Installation hinzufügen](RedMatic/01_installation.html#deinstallation),
+die beispielsweise auf einem zweiten RaspberryPi läuft.
 
 
 ## Schnellstart
