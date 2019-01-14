@@ -55,13 +55,21 @@
       v-if="data.footer"
     >
       <div>
-        Dieses Projekt lebt durch die Community!
+        <p>
+        Diese Webseite befindet sich derzeit noch im Aufbau, das Projekt lebt durch die Community -
         <a href="/doku/RedMatic/99_mitarbeit.html">Helfe mit</a>
         und mach RedMatic noch besser.
+        <p>
+        <p style="font-size: 9px">
+          <a href="https://github.com/HM-RedMatic/HM-RedMatic.github.io/blob/dev/impressum.md">Impressum und Datenschutzhinweise</a>
+          RedMatic © 2018 Sebastian Raff and RedMatic Contributors, licensed under <a href="https://github.com/HM-RedMatic/RedMatic/blob/master/LICENSE">Apache License 2.0</a><br>
+          RedMatic Documentation © 2018 Sebastian Raff and RedMatic Contributors, licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA License 4.0</a><br>
+          <a href="https://github.com/HM-RedMatic/RedMatic/blob/master/LICENSES.md">Third Party Licenses</a>
+        <p>
       </div>
-      <p>
+      <!--<p>
         {{ data.footer }}
-      </p>
+      </p>-->
     </div>
   </div>
 </template>
