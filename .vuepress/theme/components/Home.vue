@@ -61,7 +61,7 @@
         und mach RedMatic noch besser.
         <p>
         <p style="font-size: 9px">
-          <a href="https://github.com/HM-RedMatic/HM-RedMatic.github.io/blob/dev/impressum.md">Impressum und Datenschutzhinweise</a>
+          <a href="https://github.com/HM-RedMatic/HM-RedMatic.github.io/blob/dev/impressum.md">Impressum und Datenschutzhinweise</a><br>
           RedMatic © 2018 Sebastian Raff and RedMatic Contributors, licensed under <a href="https://github.com/HM-RedMatic/RedMatic/blob/master/LICENSE">Apache License 2.0</a><br>
           RedMatic Documentation © 2018 Sebastian Raff and RedMatic Contributors, licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA License 4.0</a><br>
           <a href="https://github.com/HM-RedMatic/RedMatic/blob/master/LICENSES.md">Third Party Licenses</a>
