@@ -12,5 +12,5 @@ features:
   details: Visualisierung und Steuerung über die RedMatic-WebApp und Node-RED Dashboard
 - title: Integration
   details: Anbindung an HomeKit, Alexa, Google Home und MQTT, diverse Webservices wie beispielsweise Wetterdienste, Datenbanken wie z.B. InfluxDB, SQLite oder MySQL und weitere Systeme wie KNX, Xiaomi Aqara, Loxone, Smart TVs, AV Receiver, Hue, ArtNET/DMX u.v.m
-footer: Apache 2.0 Licence © 2018 Sebastian Raff and RedMatic Contributors
+footer: Diese Webseite befindet sich derzeit noch im Aufbau!
 ---
