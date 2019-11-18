@@ -26,14 +26,20 @@ module.exports = () => {
         ...getFiles('doku/RedMatic')
       ]
     },
-
+    {
+      title: 'Crashkurs',
+      collapsable: false,
+      children: [
+        ...getFiles('doku/Crashkurs')
+      ]
+    },
     {
       title: 'FAQ',
       collapsable: false,
       children: [
         ...getFiles('doku/FAQ')
       ]
-    }
+    },
   ];
 
   sidebar['/nodes/'] = [
